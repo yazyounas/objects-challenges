@@ -1,5 +1,7 @@
 /*
 
+Write a function factorial() that takes a number as an argument and returns the factorial of the number.
+
 const  factorial = n => {
     let answer = 1;
     if(n === 0 || n === 1) {
@@ -15,8 +17,20 @@ const  factorial = n => {
   }
   console.log(factorial(100))
   */
+
+
+
+
 /*
-  const subLength = (str, char) => {
+Write a function subLength() that takes 2 parameters, 
+a string and a single character. The function should search the 
+string for the two occurrences of the character and return the 
+length between them including the 2 characters. 
+If there are less than 2 or more than 2 occurrences 
+of the character the function should return 0.
+  
+
+const subLength = (str, char) => {
     let strChars = str.toLowerCase().split(""),
         found = [],
         length = 0;
@@ -43,6 +57,7 @@ console.log(subLength('cheesecake', 'k')); // returns 0
 // The function should return a string with each item separated
 // by a comma except the last two items should be separated by the word 'and'. Make sure spaces (' ') 
 //are inserted where they are appropriate.
+
 const groceries = arr => {
     let newArr = [];
     for(let i = 0; i < arr.length; i++) {
@@ -62,3 +77,19 @@ const groceries = arr => {
 
  console.log(groceries( [{item: 'Cheese Balls'}] ));
   // returns 'Cheese Balls'
+  const validateCred = arr => {
+    let total = 0;
+    for (let i = arr.length-1; i >= 0; i--) {
+    let value = arr[i];
+    if (i % 2 === 0) {
+    value *= 2
+    if (value > 9) {
+    value -= 9
+    }
+    
+    }
+    total += value
+    }
+    return total % 10 === 0
+    
+     }
