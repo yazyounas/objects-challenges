@@ -77,6 +77,8 @@ const groceries = arr => {
 
  console.log(groceries( [{item: 'Cheese Balls'}] ));
   // returns 'Cheese Balls'
+
+  // card validation
   const validateCred = arr => {
     let total = 0;
     for (let i = arr.length-1; i >= 0; i--) {
