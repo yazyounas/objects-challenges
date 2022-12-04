@@ -95,3 +95,17 @@ const groceries = arr => {
     return total % 10 === 0
     
      }
+     console.log(validateCred([4, 5, 3, 2, 7, 7, 8, 7, 7, 1, 0, 9, 1, 7, 9, 5]));
+     // Using the dot notation
+const book = jsObject.book;    
+console.log(book);
+console.log(book.name, book.price, book.inStock);
+ 
+// Using the bracket notation
+const book2 = jsObject['book'];
+console.log(book2);
+console.log(book2["name"], book2["price"], book2["inStock"]);
+Both ways of accessing the book property return the same output:
+
+{ name: 'JSON Primer', price: 29.99, inStock: true, rating: null }
+JSON Primer 29.99 true
